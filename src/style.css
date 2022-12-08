@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    background-color: red;
+    color: white;
+    padding: 20px;
+
+}
+
+.header--image {
+    display: flex;
+    height: 100px;
+    width: 100px;
+
+}
+
+.header--title {
+
+    margin-right: auto;
+
+}
+
+.header--project {
+
+    margin-left: auto;
+}
+
+.main {
+    padding: 36px;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+
+}
+
+.form-button {
+    grid-column: 1 / -1;
+}
