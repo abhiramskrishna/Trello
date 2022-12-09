@@ -25,7 +25,7 @@ export default (props) => {
         <Cards 
           ref={provided.innerRef} 
           {...provided.droppableProps}
-          isDraggingOver={snapshot.isDraggingOver}
+          //isDraggingOver={snapshot.isDraggingOver}
           >
           {
             props.data.map((card, index) => (
@@ -51,9 +51,10 @@ export default (props) => {
 
 const Cards = styled.div`
   min-height: 50px;
-  background-color: ${props => (props.isDraggingOver ? 'skyblue' : 'inherit')};
+  
   
   
 `
 
 
+//background-color: ${props => (props.isDraggingOver ? 'skyblue' : 'inherit')};
