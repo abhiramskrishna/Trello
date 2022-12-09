@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import { Droppable } from "react-beautiful-dnd";
 import Card from './Card';
 
+
+
+
 export default (props) => {
   const updateCard = (index) => {
     let json = localStorage.getItem('lists');
@@ -12,6 +15,7 @@ export default (props) => {
     props.updateList(list);
   }
   
+
  
 
 
@@ -51,8 +55,5 @@ const Cards = styled.div`
   
   
 `
-const TrueCard = styled.div`
-  background-color: ${props => (props.isDraggingOver ? 'red' : 'inherit')};
 
-  `
 
